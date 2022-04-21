@@ -13,7 +13,7 @@ const fetchData = async () => {
 	const result = convert.xml2json(body, { compact: true, spaces: 4 });
 
 	const data = JSON.parse(result).rss.channel.item.reduce((acc, item) => {
-		if (item['media:content']['media:description'] !== undefined) {
+		if (item['media:content']['media:description']) {
 			acc.push({
 				title: item.title._cdata,
 				image: item['media:content']._attributes.url,
