@@ -30,7 +30,7 @@ Pour ce faire :
 
 ---
 
-## Requirements
+## Prérequis
 
 Pour la lancer l'application, vous aurez besoin d'installer Node.js, NPM et Angular
 
@@ -42,7 +42,7 @@ Pour la lancer l'application, vous aurez besoin d'installer Node.js, NPM et Angu
 
     $ npm --version
 
-[MongoDB](https://www.mongodb.com/)
+### [MongoDB](https://www.mongodb.com/)
 
 Créer une base de données mongodb
 
