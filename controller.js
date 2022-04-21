@@ -3,7 +3,7 @@ const Article = require('./articleModel');
 
 const pagination = Joi.object({
 	page: Joi.number().integer().default(1),
-	limit: Joi.number().integer().default(5),
+	limit: Joi.number().integer().default(9),
 	getAll: Joi.boolean().default(false),
 });
 

@@ -5,7 +5,7 @@ const convert = require('xml-js');
 
 const Article = require('./articleModel');
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: '.env' });
 const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 
 const fetchData = async () => {

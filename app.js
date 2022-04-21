@@ -1,9 +1,11 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
 const { getData, editData } = require('./controller');
 
+dotenv.config({ path: '.env' });
 const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 
 async function connectDB() {
